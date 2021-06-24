@@ -12,6 +12,7 @@ import { ReactComponent as Mountain } from './icons/icons8-mountain.svg';
 import { ReactComponent as Bell } from './icons/icons8-bell.svg';
 import { ReactComponent as Message } from './icons/icons8-new-message.svg';
 import { ReactComponent as Cog } from './icons/icons8-automation.svg';
+import { ReactComponent as BackArrow } from './icons/icons8-back.svg';
 
 
 
@@ -91,13 +92,13 @@ function DropdownMenu() {
             <DropdownItem> My Profile</DropdownItem>
             <DropdownItem 
               leftIcon={<Cog />}
-              rightIcon={<Cat />}
+              // rightIcon={<Cat />}
               goToMenu="settings">
                 Settings 
             </DropdownItem>
             <DropdownItem
             leftIcon="🦧"
-            rightIcon={<Mountain />}
+            // rightIcon={<Mountain />}
             goToMenu="animals">
             Animals
           </DropdownItem>
@@ -112,7 +113,7 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon={<Caret />}>
+          <DropdownItem goToMenu="main" leftIcon={<BackArrow />}>
             <h2>My Tutorial</h2>
           </DropdownItem>
           <DropdownItem leftIcon={<VSCode />}>HTML</DropdownItem>
@@ -129,7 +130,7 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon={<Caret />}>
+          <DropdownItem goToMenu="main" leftIcon={<BackArrow />}>
             <h2>Animals</h2>
           </DropdownItem>
           <DropdownItem leftIcon="🦘">Kangaroo</DropdownItem>
